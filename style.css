@@ -1,0 +1,377 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1c2452;
+}
+
+/* header managment */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 3%;
+    align-items: center;
+    background-color: #0A0F2C;
+    color: #E6EAF0;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    z-index: 10;
+}
+header .aldo-logo .texte-animé {
+  font-weight: bold;
+  background: linear-gradient(100deg, #f705c2, #69f5f5, #f6e089, #3d57fd);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  animation: name 1.5s ease forwards, animColor 15s ease infinite 1.5s;
+}
+@keyframes name {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes animColor {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header .nav nav ul{
+    display: flex;
+    align-items: center;
+}
+header .nav nav ul li{
+    list-style: none;
+    margin: 10px;
+}
+header .nav nav ul li a{
+    text-decoration: none;
+    background: linear-gradient(to right, #a259fa, #ea53f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: nav-bar 5s;
+}
+@keyframes nav-bar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+header .nav nav ul li a:hover{
+    cursor: pointer; 
+    font-weight: bold;
+    transition: 0.3s;
+    background: #c1d5f2;
+    -webkit-background-clip: text;
+    border-bottom: 3px solid #c1d5f2;
+    padding-bottom: 20px;
+}
+header .cv-button button a{
+    text-decoration: none;
+    color: white;
+}
+header .cv-button{
+    display: flex;
+    align-items: center;
+}
+header .cv-button button{
+    border: none;
+    padding: 7px 0;
+    border-radius: 5px;
+    margin-right: 10px;
+    justify-content: space-between;
+    font-weight: bold;
+    background: linear-gradient(100deg, #d956bd, #8beaea, #e9d37e, #ec6b66);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    animation: name 3s ease forwards, animColor 10s ease infinite 1.5s;
+}
+@keyframes name {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+header .cv-button button:hover{
+    background-color: black;
+    border: black;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+/* main mangment */
+main{
+    background-color: #1c2452;
+}
+main #home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12% 0;
+}
+main #home .text-about {
+    color: aliceblue;
+    margin-left: 10%;
+    width: 40%;
+    max-width: 22%;
+    animation: text-about 4s;
+}
+@keyframes text-about {
+    0%{
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.text-about #icon-media i{
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+}
+.text-about #icon-media a i{
+    color: white;
+}
+.text-about #icon-media a i:hover{
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+main #home h1{
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+main #home h1 span{
+    font-size: xx-large;
+    background: linear-gradient(to right, #a259fa, #1a6cef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main #home .text-about p{
+    font-family: serif ;
+}
+main #home .text-about #contact{
+    margin-top: 20px;
+}
+main #home .image-about{
+    width: 50%;
+}
+main #home .image-about img{
+    border-radius: 50%;
+    border: 5px solid #22346b;
+    margin-left: 40%;
+    width: 30%;
+    height: 30%;
+    animation: image-about 10s;
+}
+@keyframes image-about {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+main #about{
+    height: 500px;
+    overflow: auto;
+    background-color: #1c2452;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 20px solid #0A0F2C;
+    scrollbar-width: thin;
+    scrollbar-color: #1c2452 #0A0F2C;
+    z-index: 1;
+}
+main #about h2{
+    position: sticky;
+    top: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(89, 127, 210);
+    font-size: xx-large;
+    margin-bottom: 2%;
+    background-color: #0A0F2C;
+}
+main #about p{
+    color: rgb(209, 209, 209);
+    margin: 2% 15%;
+    font-size: large;
+}
+main #education{
+    text-align: center;
+    margin-top: 5%;
+    margin: 5% 20%;
+}
+main #education h2{
+    font-size: xx-large;
+    margin-bottom: 20px;
+    color: #E6EAF0;
+}
+main #education .edu{
+    display: flex;
+    justify-content: center;
+}
+main #education .edu button{
+    width: 50%;
+    padding: 10px 0;
+    font-size: large;
+    border: none;
+}
+main #education .edu button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #232946;
+    transition: 0.3s;
+}
+main .edu-content{
+    text-align: start;
+    color: #c9cdd6;
+    padding: 40px 5% 20px 15%;
+    margin-top: 0;
+    background-color: #1b2145;
+}
+main .edu-content span{
+    font-size: x-large;
+}
+main .edu-content p{
+    margin-bottom: 20px;
+}
+main #education .edu-content .online-school{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #1f264c;
+}
+main #education .edu-content .online-school .School-logo{
+    display: flex;
+    align-items: center;
+}
+main #education .edu-content .online-school .School-logo a{
+    text-decoration: none;
+    color: white;
+}
+main #education .edu-content .online-school .School-logo a:hover{
+    cursor: pointer;
+    color: rgb(87, 87, 196);
+}
+main #education .edu-content .online-school{
+    padding-right: 15px;
+}
+main #education .edu-content .online-school:hover{
+    border: 1px solid #0A0F2C;
+    border-radius: 5px;
+    background-color: #1c2c5b;
+}
+main #education .edu-content .online-school i:hover{
+    font-size: large;
+    cursor: pointer;
+}
+main #education .edu-content .online-school .School-logo img{
+    margin-right: 20px;
+}
+main #education .edu-content .online-school .School-logo button{
+    background-color: none;
+    border: none;
+}
+
+main #skills {
+    margin: 0 15%;
+}
+main #skills h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: xx-large;
+    color: #2f7af1;
+}
+main #skills .grid{
+    color: #c1d5f2;
+}
+main #skills .grid .card{
+    margin-bottom: 10px;
+}
+.grid .card h3, .grid .card h4{
+    margin-bottom: 5px;
+}
+
+
+
+
+/* Part of reponsive */
+
+@media screen  and (max-width: 768px){
+    header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 1%;
+    align-items: center;
+    background-color: #0A0F2C;
+    color: #E6EAF0;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+}
+header .nav, header .cv-button{
+    display: none;
+}
+main #home{
+    display: block;
+    margin: 0;
+    padding: 20% 0 5% 1%;
+}
+main #home .text-about {
+    color: aliceblue;
+    margin: 10%;
+    width: 100%;
+    max-width: 90%;
+}
+main #home .image-about{
+    width: 100%;
+}
+main #home .image-about img{
+    border-radius: 5%;
+    border: 5px solid #22346b;
+    margin-left: 20%;
+    width: 60%;
+    height: 60%;
+    animation: image-about 10s;
+}
+main #about{
+    margin-left: 0;
+    margin-right: 0;
+    border: 10px solid #0A0F2C;
+}
+
+}

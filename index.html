@@ -3,9 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Web Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+    <title>Aldo Kenfack</title>
 </head>
 <body>
-    
+    <header>
+        <div class="aldo-logo">
+            <h2 class="texte-animé">&lt;/Aldo Kenfack&gt;</h2>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certification">Certifications</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Experience</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cv-button">
+            <div class="lang">
+                <button class="lang-btn" style="display: inline-block;"><i class="fa-solid fa-language"></i>English</button><br>
+                <button class="lang-btn" style="display: none;"><i class="fa-solid fa-language"></i>Francais</button>
+            </div>
+            <div>
+                <button style="margin-left: 10px;"><a href="" download><i class="fa-solid fa-download"></i>Download CV</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <div class="text-about">
+                <h1>Hello, <br>I'm <span class="texte-animé">Aldo Kenfack !</span></h1>
+                <p> Student in Cyber Security and pationate about general computer science. In this web site you will read and know more about me. <br> You can download my CV on top of this page, start your reading under this part or use the nav bar to go directly where you want to know more.</p> 
+                <div id="contact">
+                    <p>You can contact me or follow me from my social media</p>
+                    <div id="icon-media">
+                        <a href="mailto:christianaldo515@gmail.com"><i class="fa-solid fa-envelope"></i></i></a>
+                        <a href="https://www.linkedin.com/in/aldo-kenfack"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Aldo-Art"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/aldo-art"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/aldo839"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://discord.gg/aldo"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-about">
+                <img src="./image/my-portrait.jpg" alt="my portrait">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About me</h2>
+            <p>I am <span style="font-size: X-large;">Aldo Kenfack</span>,<br> a dedicated and motivated cybersecurity student currently pursuing my studies <span>in Bachelor Cycle</span> at <a style="text-decoration: none; color: rgb(137, 167, 231);" href="https://ictuniversity.org">The ICT University</a>.<br>
+                With a strong interest in information security, I am actively building my expertise in areas such as network and system security, vulnerability assessment, incident response, and data protection.
+                Throughout my academic journey,<br> I have developed a solid foundation in cybersecurity principles and hands-on experience through personal projects and lab environments.<br> I am particularly interested in deffensive security, offensive security (penetration testing), secure development, cryptography, 
+                and threat intelligence, and cyber security for other field of computer science like a software and web application development, machine learning and artificial intelligence for cyber security.
+                <br>My goal is to contribute to creating secure digital environments by continuously expanding my knowledge and staying updated with the latest developments in the field.
+                <br>This website showcases my academic background, projects, and certifications. I am always open to new opportunities, collaborations, and professional connections in the cybersecurity community.</p>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="edu">
+                <button>School</button>
+                <button>Online Program</button>
+            </div>
+            <div class="edu-content">
+                <div class="edu-type">
+                    <p><span>Bachelor in Cyber security</span><br>THE ICT University <br>2023-2026</p>
+                    <p><span>French Baccalaureate in Science</span><br>LY.BI.BA.RU <br>2023</p>
+                </div>
+                <div class="edu-type">
+                    <div class="online-school">
+                        <div class="School-logo">
+                            <img src="./image/cisco-networking-academy.webp" height="50px" width="50px" alt="">
+                            <a href="https://netacad.com">Cisco Network Academic</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="online-school">
+                        <div class="School-logo">
+                            <img src="./image/coursera-logo.png" height="50px" width="50px" alt="">
+                            <a href="https://coursera.org">Coursera</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="online-school">
+                        <div class="School-logo">
+                            <img src="./image/openclassrooms-logo.png" height="50px" width="50px" alt="">
+                            <a href="https://openclassrooms.com">OpenClassrooms</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="online-school">
+                        <div class="School-logo">
+                            <img src="./image/W3Schools-logo.png" height="50px" width="50px" alt="">
+                            <a href="https://w3schools.com">W3Schools</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="online-school">
+                        <div class="School-logo">
+                            <img src="./image/tryhackme-logo.png" height="50px" width="100px" alt="">
+                            <a href="https://tryhackme.com">TryHackMe</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="online-school">
+                        <div class="School-logo">
+                            <img src="./image/burp-suite-icon.svg" height="50px" width="50px" alt="">
+                            <a href="https://portswigger.net">Portswigger</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="online-school">
+                        <div class="School-logo">
+                            <img src="./image/letsecure-logo.png" height="50px" width="100px" alt="">
+                            <a href="https://letsdefend.io/">LetsDefend</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="online-school"></div>
+                    <div class="online-school"></div>
+                    <div class="online-school"></div>
+                    <div class="online-school"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Networking</h3>
+                    <ul>
+                        <li>Small Network Configuration</li>
+                        <li>Trafic Analyze (Wireshark)</li>
+                        <li>Intrusion Detection (Snort, Suricata)</li>
+                        <li>Monitoring (Zabbix)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Penetration Testing</h3>
+                    <ul>
+                        <li>Basic Network Pentesting </li>
+                        <li>Web Application Pentesting (Metasploit, Burp Suite)</li>
+                        <li>Reporting & recommandations</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Administration System</h3>
+                    <ul>
+                        <li>Active Directory</li>
+                        <li>Users, Group and Privilage Managment</li>
+                        <li>Logs Analyze and Activity Control</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <h4>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <h4>Backend (Basic)</h4>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
 </body>
 </html>
