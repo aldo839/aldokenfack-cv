@@ -59,7 +59,7 @@ header .nav nav ul li{
 }
 header .nav nav ul li a{
     text-decoration: none;
-    background: linear-gradient(to right, #a259fa, #ea53f4);
+    background: linear-gradient(to right, #d0c1ed, #eec4f2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: nav-bar 5s;
@@ -209,8 +209,7 @@ main #about{
     margin-left: 15%;
     margin-right: 15%;
     border: 20px solid #0A0F2C;
-    scrollbar-width: thin;
-    scrollbar-color: #1c2452 #0A0F2C;
+    scrollbar-width: none;
     z-index: 1;
 }
 main #about h2{
@@ -228,6 +227,8 @@ main #about p{
     margin: 2% 15%;
     font-size: large;
 }
+
+
 main #education{
     text-align: center;
     margin-top: 5%;
@@ -256,7 +257,7 @@ main #education .edu button:hover{
 }
 main .edu-content{
     text-align: start;
-    color: #c9cdd6;
+    color: whitesmoke;
     padding: 40px 5% 20px 15%;
     margin-top: 0;
     background-color: #1b2145;
@@ -266,6 +267,9 @@ main .edu-content span{
 }
 main .edu-content p{
     margin-bottom: 20px;
+}
+main #education button:hover{
+    opacity: 0.9;
 }
 main #education .edu-content .online-school{
     display: flex;
@@ -293,6 +297,7 @@ main #education .edu-content .online-school:hover{
     border: 1px solid #0A0F2C;
     border-radius: 5px;
     background-color: #1c2c5b;
+    cursor: pointer;
 }
 main #education .edu-content .online-school i:hover{
     font-size: large;
@@ -306,6 +311,8 @@ main #education .edu-content .online-school .School-logo button{
     border: none;
 }
 
+
+
 main #skills {
     margin: 0 15%;
 }
@@ -317,13 +324,30 @@ main #skills h2{
 }
 main #skills .grid{
     color: #c1d5f2;
+    height: 450px;
+    overflow: auto;
+    scrollbar-width: none;
+    padding-top: 30px;
 }
 main #skills .grid .card{
     margin-bottom: 10px;
+    width: 100%;
 }
 .grid .card h3, .grid .card h4{
-    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: x-large;
 }
+
+main #certifications{
+    margin-top: 40px;
+}
+main #certifications h3{
+    text-align: center;
+    color: #85afdf;
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+
 
 
 
