@@ -19,7 +19,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#certification">Certifications</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="">Projects</a></li>
                     <li><a href="">Experience</a></li>
                     <li><a href="">Blog</a></li>
@@ -73,15 +73,15 @@
         <section id="education">
             <h2>Education</h2>
             <div class="edu">
-                <button>School</button>
-                <button>Online Program</button>
+                <button id="SchoolBtn" class="edu-btn" style=" background-color: #191e2a; color: white;">School</button>
+                <button id="OnlineBtn" class="edu-btn" style=" background-color: white; color: #232946;">Online Platform</button>
             </div>
             <div class="edu-content">
-                <div class="edu-type">
-                    <p><span>Bachelor in Cyber security</span><br>THE ICT University <br>2023-2026</p>
+                <div id="School-content" class="edu-type" style="display: block;">
+                    <p><span>Bachelor in Cyber security (In progress...)</span><br>THE ICT University <br>2023-2026</p>
                     <p><span>French Baccalaureate in Science</span><br>LY.BI.BA.RU <br>2023</p>
                 </div>
-                <div class="edu-type">
+                <div id="Online-content" class="edu-type" style="display: none;">
                     <div class="online-school">
                         <div class="School-logo">
                             <img src="./image/cisco-networking-academy.webp" height="50px" width="50px" alt="">
@@ -90,6 +90,13 @@
                         <div>
                             <i class="fa-solid fa-plus"></i>
                         </div>
+                    </div>
+                    <div class="school-desc" style="display: none;">
+                        <ul>
+                            <li>Networking</li>
+                            <li>Cybersecurity</li>
+                            <li>Programming</li>
+                        </ul>
                     </div>
                     <div class="online-school">
                         <div class="School-logo">
@@ -202,6 +209,32 @@
                         <li>Java</li>
                         <li>C</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h3>Certifications</h3>
+            <div class="cert-type">
+                <h4>Certifications</h4>
+            </div>
+            <div class="cert-type">
+                <h4>Certification of Course completion</h4>
+                <div class="cert">
+                    <a href="">Introduction to Cybersecurity</a>
+                </div>
+                <div class="cert">
+                    <a href="">Networking Basics</a>
+                </div>
+                <div class="cert">
+                    <a href="">Python Essentials 1</a>
+                </div>
+                <div class="cert"></div>
+            </div>
+            <div class="cert-type">
+                <h4>Job simulation</h4>
+                <div class="cert">
+                    <a href="">Mastercard Job simulation</a>
                 </div>
             </div>
         </section>
