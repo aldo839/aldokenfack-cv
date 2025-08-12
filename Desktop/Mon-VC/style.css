@@ -131,7 +131,7 @@ main #home{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12% 0;
+    padding: 14% 0;
 }
 main #home .text-about {
     color: aliceblue;
@@ -269,13 +269,15 @@ main .edu-content p{
     margin-bottom: 20px;
 }
 main #education button:hover{
-    opacity: 0.9;
+    opacity: 0.6;
 }
 main #education .edu-content .online-school{
+    margin-top: 10px;
+}
+main #education .edu-content .online-school-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
     background-color: #1f264c;
 }
 main #education .edu-content .online-school .School-logo{
@@ -289,9 +291,6 @@ main #education .edu-content .online-school .School-logo a{
 main #education .edu-content .online-school .School-logo a:hover{
     cursor: pointer;
     color: rgb(87, 87, 196);
-}
-main #education .edu-content .online-school{
-    padding-right: 15px;
 }
 main #education .edu-content .online-school:hover{
     border: 1px solid #0A0F2C;
@@ -310,8 +309,9 @@ main #education .edu-content .online-school .School-logo button{
     background-color: none;
     border: none;
 }
-
-
+main #education .edu-content .online-school .online-school-title{
+    padding-right: 12px;
+}
 
 main #skills {
     margin: 0 15%;
@@ -320,7 +320,7 @@ main #skills h2{
     text-align: center;
     margin-bottom: 40px;
     font-size: xx-large;
-    color: #2f7af1;
+    color: rgb(212, 210, 210);
 }
 main #skills .grid{
     color: #c1d5f2;
@@ -336,17 +336,135 @@ main #skills .grid .card{
 .grid .card h3, .grid .card h4{
     margin-top: 5px;
     font-size: x-large;
+    color: #85afdf;
+}
+main #skills .grid .card ul{
+    border-left: 3px solid #85afdf;
+    padding-left: 1rem;
+    list-style-position: inside;
+}
+main #skills .grid .card ul li{
+    list-style: none;
 }
 
 main #certifications{
-    margin-top: 40px;
+    margin: 20px 20%;
+}
+main #certifications h2{
+    font-size: xx-large;
+    color: whitesmoke;
+    text-align: center;
+    margin: 40px 0;
 }
 main #certifications h3{
+    color: whitesmoke;
+    font-weight: bold;
     text-align: center;
-    color: #85afdf;
-    font-size: xx-large;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
+main #certifications table{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+main #certifications table th{
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    background-color: #0A0F2C;
+    color: white;
+    border: 1px solid black;
+}
+main #certifications table td{
+    padding: 7px;
+    border: 1px solid black;
+    color: #c1d5f2;
+}
+main #certifications table button{
+    padding: 5px 20px;
+    background-color: #0A0F2C;
+    border: none;
+    border-radius: 5px;
+}
+main #certifications table button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    border: 1px solid white;
+}
+main #certifications table button a{
+    text-decoration: none;
+    color: #c1d5f2;
+}
+
+main #projects{
+    margin: 60px 5%;
+    border: 10px solid #0A0F2C;
+    padding-bottom: 30px;
+}
+main #projects h2{
+    text-align: center;
+    font-size: xx-large;
+    color: #dbe4f3;
+    margin-bottom: 40px;
+    background-color: #0A0F2C;
+    padding-bottom: 20px;
+}
+main #projects .ctf h3{
+    text-align: center;
+    color: #558ce5;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+main #projects .ctf .ctf-description{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+main #projects .cryptography h3{
+    text-align: center;
+    color: #83a2d4;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+main #projects .cryptography .crypto-description{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 0 17%;
+}
+main #projects ,.cryptography .crypto-description div img:hover{
+    opacity: 0.9;
+}
+main #projects ,.cryptography .crypto-description div a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+}
+main #projects ,.cryptography .crypto-description div a:hover{
+    color: skyblue;
+}
+main #projects .programming h3{
+    text-align: center;
+    color: #9eb1d2;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+main #projects .ml h3{
+    text-align: center;
+    color: #bdc5d2;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+ 
+
+
 
 
 
@@ -373,7 +491,7 @@ header .nav, header .cv-button{
 main #home{
     display: block;
     margin: 0;
-    padding: 20% 0 5% 1%;
+    padding: 20% 1% 5% 1%;
 }
 main #home .text-about {
     color: aliceblue;
@@ -409,5 +527,24 @@ main .edu-content{
 main #skills {
     margin: 0 5%;
 }
+
+main #certifications{
+    margin: 40px 2%;
+}
+
+main #projects{
+    margin: 60px 3%;
+    border: 4px solid #0A0F2C;
+    padding-bottom: 30px;
+}
+main #projects .ctf .ctf-description{
+    display: block;
+    padding: 0 5%;
+} 
+main #projects .cryptography .crypto-description{
+    display: block;
+    padding: 0 5%;
+}
+
 
 }
